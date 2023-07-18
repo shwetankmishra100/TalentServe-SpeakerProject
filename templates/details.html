@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="{% static 'css/main.css'%}" />
+  <title>Dynamic Speakers</title>
+</head>
+
+<body>
+
+
+  <header>
+    <div style="display: flex; flex-direction:row">
+      <div style="flex:0.8 ;">
+        <img src="{% static 'img/logo.jpg' %}" alt="My image" />
+      </div>
+      <div style="flex:0.2; display:flex; flex-direction:column;">
+        <div id="admin-font">Welcome Admin!!</div>
+        <div><a href="/"><button id="link-font" type="button">Back To Home</button></a></div>
+      </div>
+    </div>
+  </header>
+  <hr>
+  <div style="display:flex; flex-direction:row">
+    <div style="flex: 0.2" class="check"></div>
+    <div style="flex: 0.6; display:flex; flex-direction:row;" id="detaildata">
+      <div style="flex:0.8" class="check">
+        <h3>{{spkr.name}} <a id="editdetails" href="/admin/speakerapp/speaker/{{spkr.id}}/change"><button type="submit">Click To Edit</button></a></h3>
+        Email: {{spkr.email}}<br>
+        Phone No.: {{spkr.phone}}<br>
+        <br>
+        Experience: {{spkr.experience}}<br>
+        Education: {{spkr.education}}<br>
+        Expertise: {{spkr.expertise}}<br>
+        Session_date: {{spkr.session_date}}<br>
+        Session_time: {{spkr.session_time}}<br>
+      </div>
+    </div>
+    <div style="flex: 0.2"></div>
+  </div>
+
+
+
+
+
+  </div>
+
+  <hr>
+</body>
+
+</html>

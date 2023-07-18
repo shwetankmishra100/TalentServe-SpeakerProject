@@ -1,0 +1,55 @@
+body{
+background-color: #fbcc43;
+}
+
+#sidelinks{
+    background-color: #1b2c6b;
+
+    border: 5px solid #999898;
+    border-radius: 20px ;
+    /* padding-bottom: 5%; */
+
+}
+#admin-font{
+    font-size: 30px;
+    color: black;
+}
+#link-font{
+    font-size: 15px;
+    color: black;
+    background-color: burlywood;
+    border-radius: 10px;
+}
+#container-text{
+    font-size: 30px;
+    font-family: fantasy;
+    color:orange;
+}
+#container-link-font{
+    color: goldenrod;
+    font-size: 18px;
+}
+#detaildata{
+    background-color: #1b2c6b;
+
+    border: 5px solid #999898;
+    border-radius: 20px ;
+    color: #fbcc43;
+    font-size:25px ;
+    padding: 20px;
+}
+
+#editdetails{
+    margin: 125px 20px 125px 0;
+}
+#editdetails button{
+    color: black;
+    background: darksalmon;
+    border-radius: 20px;
+    margin-top: 0;
+    padding: 5px;
+}
+hr{
+    border: 3px #1b2c6b solid;
+    border-radius: 20px;
+}
